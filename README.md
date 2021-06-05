@@ -5,7 +5,7 @@
 
 ## Unidad: 1. ES6 y POO
 
-Contenidos Desarrollados:
+#### Contenidos Desarrollados:
 
 - Introducción a la Programación Orientada a Objetos
 
@@ -34,4 +34,5 @@ Contenidos Desarrollados:
 
 - Módulo 8: Framework Express
 
-Edutecno - Desafío Latam - SENCE
+
+### Edutecno - Desafío Latam - SENCE
