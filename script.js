@@ -14,7 +14,7 @@ function Paciente(nombre,edad,rut,diagnostico){
     var _rut = rut;
     var _diagnostico = diagnostico;
 
-
+// Métodos Object.defineProperty()
     Object.defineProperty(this,'_getNombre',{
         get: function(){
             return _nombre;
@@ -37,7 +37,6 @@ function Paciente(nombre,edad,rut,diagnostico){
             _edad = edad;
         }
     });
-
 
 
     Object.defineProperty(this,'_getRut',{
@@ -64,6 +63,7 @@ function Paciente(nombre,edad,rut,diagnostico){
     });
 }
 
+// Getters y Setters
 Paciente.prototype.getNombre = function(){
     return this._getNombre;
 }
@@ -109,9 +109,9 @@ Consultorio.prototype.buscarDatosPorNombre = function(nombre){
     // Ciclo FOR para recorre todo el arreglo de pacientes del consultorio e
     // imprime por consola los datos del paciente buscado por nombre
     for(var i=0; i < this.pacientes.length; i++){
-        if(nombre == this.pacientes[i].getNombre){
-            console.log('Buscar datos del paciente por nombre: ' + this.pacientes[i].getNombre);
-            console.log('Nombre: ' + this.pacientes[i].getNombre + ' - ' + 'Edad: ' + this.pacientes[i].getEdad + ' - ' + 'Rut: ' + this.pacientes[i].getRut + ' - ' + 'Diagnóstico: ' + this.pacientes[i].getDiagnostico);
+        if(nombre == this.pacientes[i].getNombre()){
+            console.log('Buscar datos del paciente por nombre: ' + this.pacientes[i].getNombre());
+            console.log('Nombre: ' + this.pacientes[i].getNombre() + ' - ' + 'Edad: ' + this.pacientes[i].getEdad() + ' - ' + 'Rut: ' + this.pacientes[i].getRut() + ' - ' + 'Diagnóstico: ' + this.pacientes[i].getDiagnostico());
         }
     }
     
