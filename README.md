@@ -1,4 +1,4 @@
-# Desafio: Creando y modificando objetos con ES5
+# Desafío: Creando y modificando objetos con ES5
 
 ### Módulo 3
 ### Programación avanzada en Javascript
